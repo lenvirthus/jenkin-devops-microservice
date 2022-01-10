@@ -20,6 +20,15 @@ pipeline {
 				}
 			}
 
-		}
-		
+		} post {
+			always {
+				echo "I am God, I always RUN!"
+			}
+			success{
+				echo "I run when you are successful"
+			}
+			failure {
+				echo "I run when you fail!"
+			}
+		}		
 }
